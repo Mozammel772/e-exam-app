@@ -14,16 +14,16 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-  // origin: [
-  //   "https://e-exam-bc5y.vercel.app",
-  //   "http://localhost:5173",
-  // ],
-  // methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
-  // allowedHeaders: ["Content-Type", "Authorization", "x-requested-with"],
-  // credentials: true,
-  // optionsSuccessStatus: 200,
-  origin: true, // সব origin allow করবে
+  origin: [
+    "https://e-exam-bc5y.vercel.app",
+    "https://e-exam-app-9cxi.vercel.app",
+    "http://localhost:5173",
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+  allowedHeaders: ["Content-Type", "Authorization", "x-requested-with"],
   credentials: true,
+  optionsSuccessStatus: 200,
+  
 };
 
 app.use(cors(corsOptions));
