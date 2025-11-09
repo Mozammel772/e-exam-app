@@ -1,10 +1,10 @@
-import "../../../styles/clientNavbar.css";
-import { Button, Dropdown, Tooltip, Avatar } from "antd";
+import { Avatar, Button, Dropdown, Tooltip } from "antd";
+import { Link } from "react-router";
 import AddIcon from "../../../assets/AddIcon";
 import DashboardIcon from "../../../assets/DashboardIcon";
-import { Link } from "react-router";
-import QuestionIcon from "../../../assets/QuestionIcon";
 import LogoutIcon from "../../../assets/LogoutIcon";
+import QuestionIcon from "../../../assets/QuestionIcon";
+import "../../../styles/clientNavbar.css";
 // import Clock from "../../../utils/clock/Clock";
 import {
   useGetAUserProfileByEmailQuery,
@@ -101,7 +101,7 @@ export default function ClientNavbar() {
     },
   ];
   return (
-    <div className="w-full fixed top-0 z-10 print:hidden">
+    <div className="w-full fixed top-0 z-10  print:hidden">
       <header className="">
         <nav
           className="bg-white client_navbar_wrapper"

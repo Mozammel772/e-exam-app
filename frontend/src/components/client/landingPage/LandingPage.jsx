@@ -1,21 +1,21 @@
-import MainNavbar from "../../common/mainNavbar/MainNavbar";
 import { Card } from "antd";
-import OneClickQuestion from "./oneClickQuestion/OneClickQuestion";
+import MainNavbar from "../../common/mainNavbar/MainNavbar";
+import Characteristics from "./characteristics/Characteristics";
 import Counting from "./counting/Counting";
 import NewQuestionText from "./newQuestionText/NewQuestionText";
-import Characteristics from "./characteristics/Characteristics";
+import OneClickQuestion from "./oneClickQuestion/OneClickQuestion";
 
 import { motion } from "framer-motion";
 
-import Faq from "./faq/Faq";
-import Footer from "./footer/Footer";
-import ScrollToTop from "react-scroll-to-top";
-import { Badge } from "antd";
-import { Button } from "@heroui/react";
 import { Divider } from "@heroui/divider";
+import { Button } from "@heroui/react";
+import { Badge } from "antd";
+import { useNavigate } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 import { ReactTyped } from "react-typed";
 import { useGetAllMessageQuery } from "../../../redux/api/slices/AnnouncementSlice";
-import { useNavigate } from "react-router-dom";
+import Faq from "./faq/Faq";
+import Footer from "./footer/Footer";
 
 import { useWindowSize } from "@uidotdev/usehooks";
 
@@ -46,7 +46,8 @@ export default function LandingPage() {
   return (
     <div className="w-full">
       <MainNavbar />
-      <div className="mt-14 relative w-full bg-indigo-50 text-indigo-800 py-2 px-4 overflow-hidden border-b border-indigo-200">
+     <div className=" max-w-[1600px] mx-auto">
+       <div className="mt-14 relative w-full bg-indigo-50 text-indigo-800 py-2 px-4 overflow-hidden border-b border-indigo-200 ">
         <div className="flex items-center space-x-2">
           <marquee className="solaimanlipi whitespace-nowrap animate-marquee text-lg font-medium">
             📢{" "}
@@ -538,6 +539,7 @@ export default function LandingPage() {
         {/* <Reviews /> */}
         <Faq />
       </div>
+     </div>
       <Footer />
       <ScrollToTop
         style={{

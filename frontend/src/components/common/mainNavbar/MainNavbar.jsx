@@ -1,8 +1,8 @@
-import { Button } from "antd";
-import "../../../styles/navbar.css";
-import { Link } from "react-router";
-import { jwtDecode } from "jwt-decode";
 import { useWindowSize } from "@uidotdev/usehooks";
+import { Button } from "antd";
+import { jwtDecode } from "jwt-decode";
+import { Link } from "react-router";
+import "../../../styles/navbar.css";
 
 export default function MainNavbar() {
   const size = useWindowSize();
@@ -32,7 +32,7 @@ export default function MainNavbar() {
 
   return (
     <nav className="navbar" style={{ backgroundColor: "#024645" }}>
-      <div className="navbar-logo flex flex-row justify-between items-center w-full">
+      <div className="navbar-logo flex flex-row justify-between items-center w-full max-w-[1600px] mx-auto">
         <Link to="/">
           <img src="https://i.ibb.co.com/mVgY9jFz/main-logo.png" alt="Logo" />
         </Link>

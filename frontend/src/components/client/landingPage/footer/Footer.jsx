@@ -1,16 +1,16 @@
-import React from "react";
+
 import { Image } from "@heroui/image";
-import "../../../../styles/footer.css";
-import FacebookIcon from "../../../../assets/FacebookIcon";
-import TwitterIcon from "../../../../assets/TwitterIcon";
-import InstagramIcon from "../../../../assets/InstagramIcon";
-import YoutubeIcon from "../../../../assets/YoutubeIcon";
-import LinkedinIcon from "../../../../assets/LinkedinIcon";
 import { Link } from "react-router";
+import FacebookIcon from "../../../../assets/FacebookIcon";
+import InstagramIcon from "../../../../assets/InstagramIcon";
+import LinkedinIcon from "../../../../assets/LinkedinIcon";
+import TwitterIcon from "../../../../assets/TwitterIcon";
+import YoutubeIcon from "../../../../assets/YoutubeIcon";
+import "../../../../styles/footer.css";
 export default function Footer() {
   return (
     <div
-      className="conatiner"
+      className="conatiner "
       style={{
         marginTop: "30px",
         // marginBottom: "30px",
@@ -19,9 +19,9 @@ export default function Footer() {
         padding: "30px",
       }}
     >
-      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4">
-        <div className="w-full">
-          <div className="flex flex-row justify-center items-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 max-w-[1600px] mx-auto">
+        <div className="w-full ">
+          <div className="flex flex-row justify-start items-start">
             <Link to="/">
               {" "}
               <Image
@@ -35,14 +35,14 @@ export default function Footer() {
               E-Exam App
             </p>
           </div>
-          <p className="text-center text-2xl solaimanlipi font-light">
+          <p className=" text-2xl solaimanlipi font-light">
             📢 প্রশ্ন তৈরি করার স্মার্ট সমাধান!📢
           </p>
-          <p className="text-center text-2xl solaimanlipi font-light">
+          <p className="text-2xl solaimanlipi font-light">
             💡স্মার্ট শিক্ষক ও অভিভাবকদের জন্য স্মার্ট সমাধান💡
           </p>
           <div
-            className="flex flex-row justify-center items-center"
+            className="flex flex-row justify-start items-center"
             style={{ marginTop: "20px" }}
           >
             <Link to="https://www.facebook.com/eexamapp" target="_blank">
@@ -58,7 +58,7 @@ export default function Footer() {
             <LinkedinIcon />
           </div>
         </div>
-        <div className="flex  items-cnter flex-col w-full">
+        <div className="flex  items-start flex-col w-full">
           <p
             style={{ marginBottom: "10px" }}
             className="text-center text-2xl font-semibold solaimanlipi"
@@ -93,7 +93,7 @@ export default function Footer() {
             ট্রেড লাইসেন্সঃ ২৯/২৫
           </p>
         </div>
-        <div className="flex  items-cnter flex-col w-full">
+        <div className="flex  items-start flex-col w-full">
           <p
             style={{ marginBottom: "10px" }}
             className="text-center text-2xl font-semibold solaimanlipi"
