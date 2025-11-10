@@ -117,6 +117,7 @@ app.use(cookieParser());
 // CORS setup
 const allowedOrigins = [
   "https://e-exam-bc5y.vercel.app",
+  "https://e-exam-bc5y.vercel.app",
   "https://e-exam-eight.vercel.app", // Google OAuth frontend
   "http://localhost:5173",
 ];
