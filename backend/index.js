@@ -17,18 +17,17 @@ app.use(express.static("public"));
 const corsOptions = {
   origin: [
     "https://e-exam-bc5y.vercel.app",
-    "https://e-exam-qam4.vercel.app/",
-    "https://e-exam-bc5y.vercel.app",
+    "https://e-exam-eight.vercel.app",
     "http://localhost:5173",
   ],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
-  allowedHeaders: ["Content-Type", "Authorization", "x-requested-with"],
+  // methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+  // allowedHeaders: ["Content-Type", "Authorization", "x-requested-with"],
   credentials: true,
-  optionsSuccessStatus: 200,
+  // optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions));
+// app.options("*", cors(corsOptions));
 
 app.use((err, req, res, next) => {
   console.error("Full error object:", {
