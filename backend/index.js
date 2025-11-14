@@ -72,7 +72,7 @@ app.use("/api/chapter", require("./routers/chapterRoutes"));
 app.use("/api/exam", require("./routers/examRoutes"));
 app.use("/api/subscription", require("./routers/subscriptionRoutes"));
 app.use("/api/reports", require("./routers/reportRoutes"));
-app.use("/api/announcements", require("./routers/announcementRoutes"));
+// app.use("/api/announcements", require("./routers/announcementRoutes"));
 app.use(
   "/api/question",
   require("./routers/questionCreationSubscriptionRoutes")
