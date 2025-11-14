@@ -16,8 +16,8 @@ app.use(express.static("public"));
 
 const corsOptions = {
   origin: [
-    "https://e-exam-bc5y.vercel.app",
-    "https://e-exam-eight.vercel.app",
+    "https://e-exam-one.vercel.app",
+    "https://e-exam-5d66.vercel.app",
     "http://localhost:5173",
   ],
   // methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
